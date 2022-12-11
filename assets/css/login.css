@@ -1,0 +1,96 @@
+@import url('../../../external.html?link=https://fonts.googleapis.com/css2?family=Inter&amp;display=swap');
+
+:root {
+    --primary-color: rgb(21, 21, 21);
+    --white-color: #fff;
+    --secondary-color: rgb(24, 24, 24);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    overflow: hidden;
+}
+
+.pop-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+	font-family: "Inter", "Roboto", sans-serif;
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    width: 455px;
+    height: 420px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.login-content form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.login-content input {
+    margin-top: 20px;
+    padding-left: 10px;
+    color: #CBD0F7;
+    background-color: #242425;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.login-content img {
+    width: 80px;
+    height: auto;
+}
+
+input::placeholder {
+    color: #CBD0F7;
+    font-size: 14px;
+}
+
+form [type="submit"] {
+    background-color: var(--secondary-color);
+    line-height: 0.8rem;
+    color: #FFCC17;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 50px;
+    padding: 19px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #FFCC17;
+}
+
+form [type="submit"]:hover{
+    background: #FFCC17;
+    color: #000000;
+    cursor: pointer;
+}
+
+a {
+    color: #FFCC17;
+}
+
+.login-content form p {
+    margin-top: 20px;
+}
